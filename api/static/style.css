@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+input{
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: bold;
+}
+.nav{
+    background-color: black;
+    width: 100vw;
+    height: 15pt;
+    overflow: hidden;
+}
+.gridcon{
+    margin-top: 25pt;
+    margin-bottom: 25pt;
+    display: grid;
+    grid-template-columns:30vw 40vw 30vw;
+    grid-template-rows: repeat(3,auto);
+}
+#numform{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+#grade{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#allout{
+    margin-top: 10pt;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+}
+#allout div{
+    margin: 5pt;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.textform01,.textform{
+    margin: 5pt;
+    padding: 5pt;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.submit{
+    margin: 5pt;
+    padding: 5pt;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width : 1200px) {
+    .gridcon{
+        grid-template-columns:25vw 50vw 25vw;
+    }
+}

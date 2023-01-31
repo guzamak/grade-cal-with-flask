@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='icon.svg') }}">
+    <title>grade cal</title>
+</head>
+<body>
+<div class="nav"></div>
+<div class="gridcon">
+    <form id="numform">
+        <h1>จำนวนวิชา?</h1>
+        <input class="textform" id="num" name="height" type="number" value="" min="1" max="100000" required>
+        <input id="submit" name="submit" type="submit" value="คำนวณ" class="submit">
+    </form>
+    <form id="grade">
+    </form>
+    <div id="allout"></div>
+</div>
+</body>
+</html>
