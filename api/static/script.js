@@ -15,7 +15,7 @@ $(document).ready(function() {
             let x = i + 1;
             $('#grade').append('<input class="textform01" id="sub'+i+'"name="sub" type="text" placeholder="วิชาที่ '+x+'"required>').hide().fadeIn(500);
             $('#grade').append('<input class="textform01" id="score'+i+'"name="score" type="number"min="1" max="100" placeholder="คะเเนน" required>').hide().fadeIn(500);
-            $('#grade').append('<input class="textform01" id="credit'+i+'"name="credit" type="number"min="1" max="10" placeholder="หน่วยกิต"step="0.1" required>').hide().fadeIn(500);
+            $('#grade').append('<input class="textform01" id="credit'+i+'"name="credit" type="number"min="0.5" max="10" placeholder="หน่วยกิต"step="0.1" required>').hide().fadeIn(500);
         };
         $('#grade').append('<input id="submit01" name="submit" type="submit" value="คำนวณ" class="submit">').hide().fadeIn(500);
         event.preventDefault();
